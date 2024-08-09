@@ -1,0 +1,112 @@
+//database and tables
+
+MariaDB [(none)]> use railway;
+Database changed
+MariaDB [railway]> select *from userdetails;
++-----------+------------+----------+--------------+
+| name      | mobile     | password | confirm_pass |
++-----------+------------+----------+--------------+
+| raja      | 8056715131 | raj#1503 | raj#1503     |
+| kokila    | 9092255438 | koki@123 | koki@123     |
+| mary      | 8765342121 | m@ry0005 | m@ry0005     |
+| dharshini | 8765432190 | dhar@345 | dhar@345     |
+| bob       | 9097654231 | bob@1234 | bob@1234     |
+| sam       | 876543210  | sam@1234 | sam@1234     |
++-----------+------------+----------+--------------+
+6 rows in set (0.001 sec)
+
+MariaDB [railway]> select *from train;
++------------------+----------+-----------------+------+------+
+| location         | train_id | name            | id   | t_id |
++------------------+----------+-----------------+------+------+
+| chennai-pune     |     2310 | chennai express |    1 |    1 |
+| chennai-pune     |     2568 | mysore express  |    1 |    3 |
+| mumbai-hyderabad |     3133 | mumbai express  |    2 |    2 |
+| mumbai-hyderabad |     2568 | mysore express  |    2 |    3 |
+| pune-mumbai      |     2568 | mysore express  |    3 |    3 |
+| varanasi-chennai |     1684 | sabari express  |    4 |    4 |
++------------------+----------+-----------------+------+------+
+6 rows in set (0.001 sec)
+
+MariaDB [railway]> select *from location;
++------+---------+-----------+
+| id   | start   | end       |
++------+---------+-----------+
+|    1 | chennai | pune      |
+|    2 | mumbai  | hyderabad |
+|    3 | pune    | mumbai    |
+|    4 | varansi | chennai   |
++------+---------+-----------+
+4 rows in set (0.001 sec)
+
+MariaDB [railway]> select *from loc1_chennai;
++---------+------+------+------+------+------+
+| class   | col1 | col2 | col3 | col4 | col5 |
++---------+------+------+------+------+------+
+| class 1 | FU   | FU   | FU   | A4   | A5   |
+| class 2 | B1   | FU   | FU   | B4   | B5   |
+| class 1 | C1   | C2   | C3   | C4   | C5   |
+| class 2 | D1   | D2   | D3   | D4   | D5   |
+| class 2 | E1   | E2   | E3   | E4   | E5   |
++---------+------+------+------+------+------+
+5 rows in set (0.001 sec)
+
+MariaDB [railway]> select *from loc1_mysore;
++---------+------+------+------+------+------+
+| class   | col1 | col2 | col3 | col4 | col5 |
++---------+------+------+------+------+------+
+| class 1 | A1   | A2   | A3   | A4   | A5   |
+| class 1 | FU   | FU   | FU   | B4   | B5   |
+| class 2 | C1   | C2   | C3   | C4   | C5   |
+| class 2 | D1   | D2   | D3   | D4   | D5   |
+| class 2 | E1   | E2   | E3   | E4   | E5   |
++---------+------+------+------+------+------+
+5 rows in set (0.151 sec)
+
+MariaDB [railway]> select *from loc2_mysore;
++---------+------+------+------+------+------+
+| class   | col1 | col2 | col3 | col4 | col5 |
++---------+------+------+------+------+------+
+| class 1 | FU   | FU   | A3   | A4   | A5   |
+| class 1 | B1   | B2   | B3   | B4   | B5   |
+| class 2 | C1   | C2   | C3   | C4   | C5   |
+| class 2 | D1   | D2   | D3   | D4   | D5   |
+| class 2 | E1   | E2   | E3   | E4   | E5   |
++---------+------+------+------+------+------+
+5 rows in set (0.001 sec)
+
+MariaDB [railway]> select *from loc2_mumbai;
++---------+------+------+------+------+------+
+| class   | col1 | col2 | col3 | col4 | col5 |
++---------+------+------+------+------+------+
+| class 1 | A1   | A2   | A3   | A4   | A5   |
+| class 1 | B1   | B2   | B3   | B4   | B5   |
+| class 2 | FU   | FU   | C3   | C4   | C5   |
+| class 2 | E1   | E2   | E3   | E4   | E5   |
++---------+------+------+------+------+------+
+4 rows in set (0.001 sec)
+
+MariaDB [railway]> select *from loc3_mysore;
++---------+------+------+------+------+------+
+| class   | col1 | col2 | col3 | col4 | col5 |
++---------+------+------+------+------+------+
+| class 1 | A1   | A2   | A3   | A4   | A5   |
+| class 1 | FU   | FU   | FU   | FU   | FU   |
+| class 2 | C1   | C2   | C3   | C4   | C5   |
+| class 2 | FU   | FU   | FU   | D4   | D5   |
+| class 2 | E1   | E2   | E3   | E4   | E5   |
++---------+------+------+------+------+------+
+5 rows in set (0.001 sec)
+
+MariaDB [railway]> select *from loc4_sabari;
++---------+------+------+------+------+------+
+| class   | col1 | col2 | col3 | col4 | col5 |
++---------+------+------+------+------+------+
+| class 1 | A1   | A2   | A3   | A4   | FU   |
+| class 1 | B1   | B2   | B3   | B4   | B5   |
+| class 2 | C1   | C2   | C3   | C4   | C5   |
+| class 2 | D1   | D2   | D3   | D4   | D5   |
+| class 2 | FU   | FU   | FU   | FU   | FU   |
++---------+------+------+------+------+------+
+5 rows in set (0.001 sec)
+

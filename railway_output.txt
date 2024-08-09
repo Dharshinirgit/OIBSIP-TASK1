@@ -1,0 +1,180 @@
+
+D:\java>javac railway.java
+
+D:\java>java -cp .;mysql-connector-j-8.0.33.jar railway
+
+ouput type -1:
+--------------
+
+RAILWAY ONLINE RESERVATION
+***************************
+
+WELCOME
+1.login
+2.Register
+Enter your option:
+1
+choice:1
+
+enter the username:
+raja
+enter the password:
+raj#1503
+WARM WELCOME TO YOU!
+
+Welcome
+KINDLY CHOOSE YOUR LOCATION:
+
+1.chennai--pune
+2.mumbai--hyderabad
+3.pune--mumbai
+4.varansi--chennai
+enter your choice:
+1
+
+TRAIN DETAILS:
+
+1.2310 chennai express
+3.2568 mysore express
+enter your choice:
+1
+
+Enter the convinient date for booking:
+15/08/2024
+
+enter the no of seats:
+2
+
+KINDLY SELECT YOUR CLASS
+1.class-1
+2.class-2
+enter your choice:
+1
+SEAT LAYOUT
+************
+class 1    FU    FU    FU    A4    A5
+
+class 2    B1    B2    B3    B4    B5
+
+class 1    C1    C2    C3    C4    C5
+
+class 2    D1    D2    D3    D4    D5
+
+class 2    E1    E2    E3    E4    E5
+
+**FU** means *FILLED* or *BOOKED* seats please choose other seats
+
+choose your seats:
+B2
+B3
+
+TICKET DETAILS
+***************
+FROM: chennai TO: pune
+TRAIN ID AND NAME:2310 chennai express
+BOOKED DATE AND TIME:Fri Aug 09 12:59:24 IST 2024
+DATE FOR JOURNEY:15/08/2024
+ONE TICKET PRICE:250
+ADMIT:2
+SEAT NO:B2B3
+TOTAL PRICE:500
+
+
+THANK YOU FOR BOOKING TICKETS
+
+ouput type -2:
+--------------
+
+D:\java>java -cp .;mysql-connector-j-8.0.33.jar railway
+RAILWAY ONLINE RESERVATION
+***************************
+
+WELCOME
+1.login
+2.Register
+Enter your option:
+1
+choice:1
+
+enter the username:
+sam
+enter the password:
+sam@123
+User doesnot exists!kindly do register
+1.login
+2.Register
+Enter your option:
+2
+enter the username:
+sam
+enter your mobile no:
+87654312
+mobile no should contain 10 digits only
+876543210
+enter your password:
+sam@123
+password should contain maximum 8 characters
+sam@1234
+confirm the password(re-enter):
+sam@1234
+User registered successfully
+
+Welcome
+KINDLY CHOOSE YOUR LOCATION:
+
+1.chennai--pune
+2.mumbai--hyderabad
+3.pune--mumbai
+4.varansi--chennai
+enter your choice:
+4
+
+TRAIN DETAILS:
+
+4.1684 sabari express
+enter your choice:
+4
+
+Enter the convinient date for booking:
+14/09/2024
+
+enter the no of seats:
+1
+
+KINDLY SELECT YOUR CLASS
+1.class-1
+2.class-2
+enter your choice:
+2
+SEAT LAYOUT
+************
+class 1    A1    A2    A3    A4    FU
+
+class 1    B1    B2    B3    B4    B5
+
+class 2    C1    C2    C3    C4    C5
+
+class 2    D1    D2    D3    D4    D5
+
+class 2    FU    FU    FU    FU    E5
+
+**FU** means *FILLED* or *BOOKED* seats please choose other seats
+
+choose your seats:
+E5
+
+TICKET DETAILS
+***************
+FROM: varansi TO: chennai
+TRAIN ID AND NAME:1684 sabari express
+BOOKED DATE AND TIME:Fri Aug 09 13:00:45 IST 2024
+DATE FOR JOURNEY:14/09/2024
+ONE TICKET PRICE:150
+ADMIT:1
+SEAT NO:E5
+TOTAL PRICE:150
+
+
+THANK YOU FOR BOOKING TICKETS
+
+D:\java>
