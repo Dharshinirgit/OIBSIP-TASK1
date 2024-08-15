@@ -26,10 +26,10 @@ The user has to choose a train from the list displayed.
 # Seating details
 
 1.There is a separate seating layout for each train .
-2. In the seating layout, the available seats and booked seats are displayed.
-3.  'FU' represents booked seats, so the user has to choose other seats only.
-4. The no of required by the user is already collected and based on the seat requirement the user allowed to choose the seats.
-5. The user also need to choose the class for booking tickets ( fisrt class or second class ).
+2.In the seating layout, the available seats and booked seats are displayed.
+3.'FU' represents booked seats, so the user has to choose other seats only.
+4.The no of required by the user is already collected and based on the seat requirement the user allowed to choose the seats.
+5.The user also need to choose the class for booking tickets ( fisrt class or second class ).
 
  # Ticket booking details:
 
